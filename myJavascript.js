@@ -24,13 +24,13 @@ var randomUser = {
 }
 
 //handlebars step one: grap the html from the script tag
-
+var userHTML = $("#userScript").html()
 
 //handlebars step two: compile it into a template
+var userTemplate = Handlebars.compile(userHTML)
 
-
-//handlebars step three:render the HTML by passing the data to the template
-
+//handlebas step three: render the resulting HTML by passing the data to the template
+var userOutput = userTemplate(randomUser)
 
 //handlebars step four: put the complete HTML into the DOM
-
+$("#userGoesHere").append(userOutput)
