@@ -5,12 +5,22 @@
   <title>Handlebars Exercise</title>
 </head>
 <body>
-  <h1>Here's a random user</h1>
+  <h1>Here's a random user:</h1>
 
-<!-- output div -->
+  <!-- output div -->
+  <div id="user-output"></div>
 
-<!-- handlebars script -->
+  <!-- handlebars script -->
+  <script id="userEntry" type="text/x-handlebars-template">
+    <img src={{results.0.picture.medium}}>
+    <div>Name: {{results.0.name.first}} {{results.0.name.last}}</div>
+    <div>Address: {{results.0.location.street}} {{results.0.location.city}}, {{results.0.location.state}} {{results.0.location.postcode}}</div>
+    <div>Email: {{results.0.email}}</div>
+  </script>
 
-<!-- regular javascript scripts -->
+  <!-- regular javascript scripts -->
+  <script src="bower_components/jQuery/dist/jquery.min.js" type="text/javascript"></script>
+  <script src="bower_components/handlebars/handlebars.js" type="text/javascript"></script>
+  <script src="myJavascript.js" type="text/javascript"></script>
 </body>
 </html>
