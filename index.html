@@ -12,10 +12,10 @@
 
   <!-- handlebars script -->
   <script id="userEntry" type="text/x-handlebars-template">
-    <img src={{randomUser.results.0.picture.medium}}>
-    <div>Name: {{randomUser.results.0.name.first}} {{randomUser.results.0.name.last}}</div>
-    <div>Address: {{randomUser.results.0.location.street}} {{randomUser.results.0.location.city}}, {{randomUser.results.0.location.state}} {{randomUser.results.0.location.postcode}}</div>
-    <div>Email: {{randomUser.results.0.email}}</div>
+    <img src={{results.0.picture.medium}}>
+    <div>Name: {{results.0.name.first}} {{results.0.name.last}}</div>
+    <div>Address: {{results.0.location.street}} {{results.0.location.city}}, {{results.0.location.state}} {{results.0.location.postcode}}</div>
+    <div>Email: {{results.0.email}}</div>
   </script>
 
   <!-- regular javascript scripts -->
