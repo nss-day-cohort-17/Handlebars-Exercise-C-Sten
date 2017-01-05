@@ -1,0 +1,17 @@
+{
+  "name": "Handlebars-Exercise-C-Sten",
+  "homepage": "https://github.com/Jufebrown/Handlebars-Exercise-C-Sten",
+  "authors": [
+    "Jufebrown <jufebrown@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
